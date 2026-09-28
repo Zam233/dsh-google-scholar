@@ -1,0 +1,21 @@
+# dsh-google-scholar bundle patch — mounts the SerpAPI Google Scholar tools.
+# `dsh plugin --profile <name> add dsh-google-scholar` reconciles this bundle
+# into the profile's `dsh.profile.bundles` stack; the profile boot merges this
+# patch (a single `insert` of the plugin row) with its config.
+#
+# ⚠️ 本文件在仓库中只保留空占位值，**不要在此提交真实 SerpAPI Key**。
+#    部署时请在自己的 profile 层用同一个 id 覆盖（该文件不在仓库内）：
+#
+#      # $DSH_HOME/profiles/<name>/cordis.patch.yml
+#      - id: dsh-google-scholar
+#        config:
+#          serpapi_key: <your-serpapi-key>
+#          max_results: 10
+#
+#    未配置时工具会返回「未配置 SerpAPI Key」。
+- insert:
+    - id: dsh-google-scholar
+      name: dsh-google-scholar
+      config:
+        serpapi_key: ''
+        max_results: 10
