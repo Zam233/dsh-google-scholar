@@ -111,8 +111,6 @@ dsh plugin --profile web add git+https://github.com/Zam233/dsh-google-scholar.gi
 
 本项目代码以 **GNU GPL-3.0-or-later** 发布，见 [`LICENSE`](./LICENSE)。
 
-- 移植自作者自有项目 **Scholar_View**（同为 GPL-3.0）的 `plugins/google_scholar`；
-- 未捆绑任何第三方代码；DSH 依赖仅作 peerDependency（MIT）；
 - **SerpAPI 是第三方商业服务**，本项目的 GPL 授权**不包含**其使用授权，请遵守
   [SerpAPI 服务条款](https://serpapi.com/legal)；
 - 详见 [`THIRD-PARTY-NOTICES.md`](./THIRD-PARTY-NOTICES.md)。
