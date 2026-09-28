@@ -3,8 +3,6 @@
 DeepSeek Harness 插件：通过 [SerpAPI](https://serpapi.com) 检索 **Google Scholar**，
 注册三个 LLM 工具（共享 SerpAPI 月配额）。
 
-由作者自有项目 Scholar_View 的 `plugins/google_scholar` 移植（原实现为 Python，本插件以 JavaScript 重写）。
-
 ## 提供的工具
 
 | 工具 | 说明 |
@@ -59,7 +57,7 @@ dsh --profile web --dump-config        # 只打印组合配置，不启动服务
 把下面这段发给你的 Agent：
 
 ````text
-请帮我配置 dsh-google-scholar 插件（插件已装好，只需填配置）：
+请帮我配置 dsh-google-scholar 插件：
 
 1. 我已经注册好 SerpAPI，你把我的 API Key 写进
    $DSH_HOME/profiles/<当前 profile>/cordis.patch.yml：
